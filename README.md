@@ -24,17 +24,19 @@ Created a web app to cater the above requirements. The app consists of the follo
 
 ## Screenshots of the Application: 
     • Restaurants Screen: Screen to display all the restaurants
- 
-    Normal View
+ ![ThinkBridge](https://github.com/Dhruvil0208/ngRestaurantApp/assets/107906129/24bff2c5-a635-41d0-9ebd-5962bd441d8d)
+                                      Normal View
 
- 
-    Mobile View
+![ThinkBridge2](https://github.com/Dhruvil0208/ngRestaurantApp/assets/107906129/a779abfb-b163-4496-a89c-9dea7ab2215c)
+                                      Mobile View
+    
     • Add/Update Screen
-
- 
-    Normal View
- 
-    Mobile View
+    
+![ThinkBridge3](https://github.com/Dhruvil0208/ngRestaurantApp/assets/107906129/9e0b1cf8-725e-45f4-a946-4628a3f3455d)
+                                      Normal View
+                                      
+![ThinkBridge4](https://github.com/Dhruvil0208/ngRestaurantApp/assets/107906129/025444c7-9d53-4619-b838-45042754cfbf)
+                                      Mobile View
 
 ## Technical Aspects of Application: 
     •	Have used a common service to store the data and have created methods to fetch the data, save the data and updating the same. Have used Rxjs to mimic asynchronous nature of API’s. 
