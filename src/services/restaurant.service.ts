@@ -17,7 +17,8 @@ export class RestaurantService {
       country: 'India',
       openFrom: new Date("2024-07-06T05:30:00.141Z"),
       openTo: new Date("2024-07-06T14:30:00.166Z"),
-      joiningDate: new Date("2023-12-31T18:30:00.000Z")
+      joiningDate: new Date("2023-12-31T18:30:00.000Z"),
+      description:"We serve food as lightning fast speed"
     },
     {
       id:2,
@@ -28,7 +29,8 @@ export class RestaurantService {
       country: 'India',
       openFrom: new Date("2024-07-06T05:30:00.141Z"),
       openTo: new Date("2024-07-06T14:30:00.166Z"),
-      joiningDate: new Date("2023-12-31T18:30:00.000Z")
+      joiningDate: new Date("2023-12-31T18:30:00.000Z"),  
+      description:"Spend Your Fridays with us."
     },
     {
       id:3,
@@ -39,7 +41,8 @@ export class RestaurantService {
       country: 'India',
       openFrom: new Date("2024-07-06T05:30:00.141Z"),
       openTo: new Date("2024-07-06T14:30:00.166Z"),
-      joiningDate: new Date("2023-12-31T18:30:00.000Z")
+      joiningDate: new Date("2023-12-31T18:30:00.000Z"),
+      description:"The deserts and delights you deserve"
     },
     {
       id: 4,
@@ -50,7 +53,8 @@ export class RestaurantService {
       country: "India",
       openFrom: new Date("2024-07-06T05:30:00.141Z"),
       openTo: new Date("2024-07-06T14:30:00.166Z"),
-      joiningDate: new Date("2023-12-31T18:30:00.000Z")
+      joiningDate: new Date("2023-12-31T18:30:00.000Z"),
+      description:"Best Mughlai in town is served here"
   }
 ]
   constructor() { }

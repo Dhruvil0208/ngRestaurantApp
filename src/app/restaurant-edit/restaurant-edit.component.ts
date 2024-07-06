@@ -37,7 +37,8 @@ export class RestaurantEditComponent implements OnInit{
       country: ['', Validators.required],
       openFrom: ['', Validators.required],
       openTo: ['', Validators.required],
-      joiningDate: ['', Validators.required]
+      joiningDate: ['', Validators.required],
+      description: ['', Validators.required],
     })
   }
 
