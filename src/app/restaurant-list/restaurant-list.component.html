@@ -1,0 +1,36 @@
+<div class="restaurant-list-container">
+    <div class="search-container">
+        <form #searchForm="ngForm">
+            <input type="text" pInputText [(ngModel)]="search" placeholder="Search" name="search"/>
+        </form>
+    </div>
+    <div class="restaurant-list-main-container">
+        <ng-container *ngIf="restaurants && restaurants.length">
+            <ng-container *ngFor="let restaurant of restaurants">
+                <p-card header="" subheader="" [style]="{ width: '250px' }">
+                    <ng-template pTemplate="title">
+                        <span>{{restaurant.name}}</span>
+                    </ng-template>
+    
+                    <ng-template pTemplate="subtitle">
+                        <span>{{restaurant._$$openFrom}} - {{restaurant._$$openTo}}</span>
+                    </ng-template>
+                    <ng-template pTemplate="content">
+                        <span>
+                        {{restaurant.street}} {{restaurant.city}} {{restaurant.state}} {{restaurant.country}}
+                        </span>
+                    </ng-template>
+                    <ng-template pTemplate="footer">
+                        <div class="flex gap-3 mt-1 button-container">
+                            <p-button label="Delete" [rounded]="true" severity="danger" (click)="deleteClickHandler(restaurant)" />
+                            <p-button label="Edit" [rounded]="true" (click)="editClickHandler(restaurant)"/>
+                        </div>
+                    </ng-template>
+                </p-card>
+            </ng-container>
+        </ng-container>
+        <ng-container *ngIf="!(restaurants && restaurants.length)">
+            <div>No Restaurants Found.</div>
+        </ng-container>
+    </div>
+</div>

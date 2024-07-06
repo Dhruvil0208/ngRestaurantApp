@@ -1,0 +1,45 @@
+<div class="restaurant-edit-screen-container">
+    <div class="restaurant-form-container">
+        <form action="" [formGroup]="baseForm" (ngSubmit)="onSubmit()">
+            <div class="restaurant-form-controls control-required">
+                <label for="name">Name</label>
+                <input pInputText id="name" aria-describedby="name-help" formControlName="name" />
+            </div>
+            <div class="restaurant-form-controls control-required">
+                <label for="street">Street</label>
+                <input pInputText id="street" aria-describedby="street-help" formControlName="street" />
+            </div>
+            <div class="restaurant-form-controls control-required">
+                <label for="city">City</label>
+                <input pInputText id="city" aria-describedby="city-help" formControlName="city" />
+            </div>
+            <div class="restaurant-form-controls control-required">
+                <label for="state">State</label>
+                <input pInputText id="state" aria-describedby="state-help" formControlName="state" />
+            </div>
+            <div class="restaurant-form-controls control-required">
+                <label for="country">Country</label>
+                <input pInputText id="country" aria-describedby="country-help" formControlName="country" />
+            </div>
+            <div class="restaurant-form-controls control-required">
+                <label for="openFrom">Open From</label>
+                <p-calendar 
+                formControlName="openFrom" id="openFrom" aria-describedby="openFrom-help" [timeOnly]=true [hourFormat]="'12'"/>
+            </div>
+            <div class="restaurant-form-controls control-required">
+                <label for="openTo">Open Till</label>
+                <p-calendar 
+                formControlName="openTo" id="openTo" aria-describedby="openTo-help" [timeOnly]=true [hourFormat]="'12'"/>
+            </div>
+
+            <div class="restaurant-form-controls control-required">
+                <label for="joiningDate">Registration Date</label>
+                <p-calendar 
+                formControlName="joiningDate" id="joiningDate" aria-describedby="joiningDate-help"/>
+            </div>
+        </form>
+    </div>
+    <div class="restaurant-form-container">
+        <p-button label="Submit" type="submit" [disabled]="!baseForm.dirty" [rounded]="true" (click)="onSubmit()"/>
+    </div>
+</div>

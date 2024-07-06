@@ -1,0 +1,16 @@
+.restaurant-edit-screen-container{
+    .restaurant-form-container{
+        display: flex;
+        justify-content: center;
+        .restaurant-form-controls{
+            display: flex;
+            flex-direction: column;
+            gap: 2;
+            padding: 0.5rem;
+            &.control-required>label::after{
+                content: '*';
+                color: red;
+            }
+        }
+    }
+}
