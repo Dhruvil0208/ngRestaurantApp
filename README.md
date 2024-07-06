@@ -1,5 +1,5 @@
 
-# Project Title
+# Foodie Delight
 
 A simple Frontend Application for restaurant manangement system
 
